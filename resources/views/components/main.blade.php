@@ -15,15 +15,18 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         
     </head>
-    <body>
-        <!-- Responsive navbar-->
+    <body >
+        <div class="bg-home">
+          <!-- Responsive navbar-->
         <x-navbar /> 
         <!-- Header-->
         {{$slot}}
          <!-- Footer-->
-         <footer class="py-5 bg-dark">
-            <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
-        </footer>
+         <footer class="py-5 ">
+            <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2024</p></div>
+        </footer>    
+        </div>
+      
     </body>
 </html>
 </div>
