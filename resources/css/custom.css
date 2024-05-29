@@ -10835,6 +10835,9 @@ textarea.form-control-lg {
   font-size: 2rem;
 }
 
-.bg-home{
- 
+.bgcard{
+  background-image: url(/public/asset/sincerely-media-_-hjiem5TqI-unsplash.jpg);
+  background-size: cover;
+
 }
+ 

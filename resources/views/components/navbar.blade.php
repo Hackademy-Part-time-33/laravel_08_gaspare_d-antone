@@ -6,9 +6,23 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   
-                    <li class="nav-item"><a class="nav-link" href="">Aboutus</a></li>
-                    {{-- <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li> --}}
-                    
+                    @auth
+                        
+                    <span class="text-white">Benvenuto,{{Auth::user()->name}}</span>
+                    @endauth
+                    @guest
+                    <a class="btn btn-outline-light " href="{{ route('login') }}">Login</a>
+                    <a class="btn btn-outline-light" href="{{ route('register') }}">Registrati</a>
+                        
+                    @endguest
+                    @auth
+                    <form action="{{route('logout')}}" method="POST">
+                        @csrf
+                        <button class="btn btn-outline-light" type="submit" href="{{ route('logout') }}">Logout</button>
+                    </form>
+                        
+                    @endauth
+
                 </ul>
             </div>
         </div>

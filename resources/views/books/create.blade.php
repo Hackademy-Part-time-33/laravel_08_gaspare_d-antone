@@ -38,8 +38,8 @@
                         <input class="form-control" id="image" name="image" value type="file">
                     </div>        
                     @error('image')
-                            {{$message}}
-                        @enderror
+                        {{$message}}
+                    @enderror
 
                     
                     <div class="d-grid">
